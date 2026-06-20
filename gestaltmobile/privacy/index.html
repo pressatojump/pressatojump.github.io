@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GESTALT Privacy Policy</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">GESTALT Mobile</p>
+      <h1>Privacy Policy</h1>
+      <p>GESTALT Mobile is a thin client for a paired Mac substrate. The iPhone app stores the Groq speech-to-text API key and Mac-issued device token in the iOS Keychain using <code>kSecAttrAccessibleWhenUnlockedThisDeviceOnly</code>.</p>
+      <p>Connected canvas snapshots are cached locally for offline restore as app functionality. Voice command history, canvas interaction statistics, and app usage statistics are opt-in categories. All three default to off. When a category is disabled, associated local data is purged within 60 seconds. Consented context is stored locally in <code>Application Support/GESTALT/gestalt_context.db</code> and is not sent to the substrate unless the user explicitly exports or shares it.</p>
+      <p>LLM provider keys are not stored on the iPhone. LLM requests are proxied through the paired Mac substrate over the authenticated local WebSocket connection.</p>
+      <p>The app does not include third-party analytics or advertising SDKs. Voice audio is sent to the configured Groq speech-to-text endpoint only when the user starts voice capture; if that request fails, the app can use Apple's on-device Speech recognizer as a local fallback when the selected language is supported.</p>
+      <p>For privacy or data deletion questions, use the support channel listed on the support page.</p>
+    </main>
+  </body>
+</html>
