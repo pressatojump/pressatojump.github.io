@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>An inspectable trail of every delegated task</title>
+  <meta name="description" content="POS-A01 writes each agent action to a trail you can open after the fact. Who ran it, when, and what it touched." />
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font: 17px/1.55 "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+      color: #ece8e1;
+      background: #141414;
+    }
+    header, main, footer { width: min(980px, calc(100% - 2rem)); margin-inline: auto; }
+    header { display: flex; justify-content: space-between; align-items: center; padding: 1.25rem 0; color: #9a9388; }
+    .brand { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; color: #e08a1e; letter-spacing: .08em; font-weight: 700; }
+    .hero { padding: 2.25rem 0 3rem; display: grid; gap: 2rem; }
+    @media (min-width: 800px) { .hero { grid-template-columns: 1fr 1fr; align-items: center; } }
+    h1 { font-size: clamp(1.85rem, 3.6vw, 2.55rem); line-height: 1.15; margin: 0 0 1rem; }
+    .lede { color: #d4cfc6; margin: 0 0 1.6rem; }
+    .cta {
+      display: inline-block; background: #e08a1e; color: #141414; text-decoration: none;
+      padding: .85rem 1.25rem; border-radius: 6px; font-weight: 700;
+    }
+    .cta:hover { background: #f0a040; }
+    .art { width: 100%; border-radius: 8px; border: 1px solid #3a3530; }
+    .points { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); padding-bottom: 3rem; }
+    .card { background: #1c1c1c; border: 1px solid #3a3530; border-radius: 8px; padding: 1.05rem 1.1rem; }
+    .card h2 { font-size: .95rem; margin: 0 0 .4rem; color: #e08a1e; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .card p { margin: 0; color: #d4cfc6; font-size: .95rem; }
+    footer { color: #9a9388; font-size: .85rem; padding: 1.5rem 0 2.5rem; border-top: 1px solid #3a3530; }
+    footer a { color: inherit; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">POS-A01</div>
+    <span>Inspectable trail</span>
+  </header>
+  <main>
+    <section class="hero">
+      <div>
+        <h1>An inspectable trail of every delegated task</h1>
+        <p class="lede">POS-A01 writes each agent action to a trail you can open after the fact. Who ran it, when, and what it touched.</p>
+        <a class="cta" href="/thanks?v=pos-a01">Review POS-A01</a>
+      </div>
+      <img class="art" src="/img/pos-a01.jpg" alt="Paper-tape audit trail with a sealed event mark" />
+    </section>
+    <section class="points">
+      <article class="card"><h2>01 Recorded</h2><p>Every delegated agent action is written down. Nothing lives only in a chat scroll.</p></article>
+      <article class="card"><h2>02 After the fact</h2><p>Open the trail later. The record is still there when the session is gone.</p></article>
+      <article class="card"><h2>03 Who / when / what</h2><p>Actor, time, and touched object stay visible on each entry.</p></article>
+    </section>
+  </main>
+  <footer>
+    Evaluation page for a paid-traffic test. No purchase is collected here.
+    <a href="/privacy">Privacy</a>
+  </footer>
+</body>
+</html>
